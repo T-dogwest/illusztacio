@@ -1,13 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="text-center p-3">
+    <h1>Vite-es Illusztráció Teszt</h1>
+  </header>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="form">
+          <label class="form-label">
+            Illusztrációs kép URL-je:
+          </label>
+          <input type="text" id="kepURL" class="form-control" placeholder="Kép URL" />
+          <label class="form-label">
+            Betűméret (pt):
+          </label>
+          <input type="number" id="meret" class="form-control" placeholder="Betűméret" />
+          <label class="form-label">
+            Sorköz (em):
+          </label>
+          <input type="number" id="magassag" class="form-control" placeholder="Sorköz" />
+          <label class="form-label">
+            Betűszín:
+          </label>
+          <input type="color" id="betuszin" class="form-control" />
+          <button id="keppoz" class="btn btn-primary mt-3">
+            Kép pozíció váltása
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="preview">
+          <div class="text">
+            <p id="loremIpsum">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla ex, rhoncus nec blandit quis, euismod at
+              nisi. Donec laoreet condimentum quam, a blandit eros euismod mattis. Mauris pharetra quam est, vitae
+              sollicitudin dolor malesuada sit amet. Nullam sed libero sed est porttitor ultrices volutpat a lacus.
+              Etiam sed odio lorem. Pellentesque vel dolor sollicitudin, faucibus magna mollis, scelerisque ex. In
+              hendrerit mattis est, ac maximus nisi pretium vel. Etiam vel tincidunt ante. Nunc vitae urna quam. Donec
+              nibh nisi, pulvinar sit amet eleifend iaculis, congue in tortor. Etiam rutrum quam dolor, quis fringilla
+              arcu vulputate sit amet. Nam euismod elit sit amet ex varius malesuada. Nam ut arcu ac tellus auctor
+              posuere. Nullam molestie orci ultricies, sagittis elit porttitor, scelerisque urna.
+              Donec rhoncus ligula vitae nulla bibendum, ut porttitor mauris ultrices. Pellentesque est metus,
+              vestibulum vel odio id, porta sodales purus. Curabitur scelerisque fringilla ligula et accumsan. Etiam
+              ultrices nisl ut nisl ultrices malesuada. Ut vestibulum risus nec ultricies iaculis. Duis ornare fermentum
+              magna sit amet porta. Suspendisse potenti. Nunc ligula turpis, malesuada ac mi et, luctus euismod nibh.
+              Donec hendrerit volutpat felis, nec tempor ex maximus placerat. Nullam in sollicitudin elit, quis egestas
+              tellus. Nulla malesuada auctor urna.
+            </p>
+          </div>
+          <div class="image float-left">
+            <img id="illustration" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg"
+              alt="Illusztráció" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center p-3">
+    <p>Készítette: Csontos Tibor, 2/14s </p>
+  </footer>
+
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
